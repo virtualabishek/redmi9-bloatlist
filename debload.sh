@@ -15,13 +15,10 @@
 # ====================================================================================
 
 
-# SECTION 1: DO NOT REMOVE
-# These packages were in your original script but are critical. Removing them is
-# a primary cause of boot loops or system failure. They are listed here so you
-# know what to AVOID.
-#
+# DO NOT REMOVE
+
 # declare -a do_not_remove=(
-#
+
 #   com.xiaomi.account                  # CRITICAL: Manages Mi Account, essential for many services.
 #   com.android.updater                 # CRITICAL: Required for receiving and installing system OTA updates.
 #   com.android.thememanager            # CRITICAL: Manages all themes, icons, and fonts in MIUI.
@@ -31,27 +28,24 @@
 # )
 
 
-# SECTION 2: USE WITH CAUTION
-# These packages disable specific features you might use.
-# To remove any of these, DELETE the '#' from the beginning of the line.
-# Review each one carefully and decide if you need the feature.
-#
+# USE WITH CAUTION
+
 declare -a use_with_caution=(
 
-#   com.miui.cloudservice               # Mi Cloud core service. Remove this and all other "cloud" packages if you don't use Mi Cloud.
-#   com.miui.cloudbackup                # Mi Cloud backup functionality.
-#   com.miui.micloudsync                # Mi Cloud sync functionality.
-#   com.miui.cloudservice.sysbase       # Mi Cloud system base.
-#   com.miui.gallery                    # Default MIUI Gallery app. System may still try to call it. Remove only if you have an alternative.
-#   com.android.deskclock               # The default Clock app (alarms, timer). Do not remove unless you have a reliable alternative.
-#   com.xiaomi.joyose                   # A performance/gaming service. Some users report issues after removal.
-#   com.miui.cit                        # Hardware test mode (CIT). Useful for diagnostics.
-#   com.miui.misound                    # Sound effects and equalizer settings (Dirac). Sound quality might change if removed.
-#   com.miui.audioeffect                # Related to audio effects.
-#   com.miui.freeform                   # Floating windows feature.
-#   com.miui.touchassistant             # The "Quick Ball" floating assistant.
-#   com.google.android.projection.gearhead # Android Auto.
-#   com.android.printspooler            # Service for printing documents from your phone.
+  com.miui.cloudservice               # Mi Cloud core service. Remove this and all other "cloud" packages if you don't use Mi Cloud.
+  com.miui.cloudbackup                # Mi Cloud backup functionality.
+  com.miui.micloudsync                # Mi Cloud sync functionality.
+  com.miui.cloudservice.sysbase       # Mi Cloud system base.
+  com.miui.gallery                    # Default MIUI Gallery app. System may still try to call it. Remove only if you have an alternative.
+  com.android.deskclock               # The default Clock app (alarms, timer). Do not remove unless you have a reliable alternative.
+  com.xiaomi.joyose                   # A performance/gaming service. Some users report issues after removal.
+  com.miui.cit                        # Hardware test mode (CIT). Useful for diagnostics.
+  com.miui.misound                    # Sound effects and equalizer settings (Dirac). Sound quality might change if removed.
+  com.miui.audioeffect                # Related to audio effects.
+  com.miui.freeform                   # Floating windows feature.
+  com.miui.touchassistant             # The "Quick Ball" floating assistant.
+  com.google.android.projection.gearhead # Android Auto.
+  com.android.printspooler            # Service for printing documents from your phone.
 #   com.android.emergency               # Manages emergency contacts and SOS features.
 )
 
@@ -137,7 +131,7 @@ com.miui.fm
 com.mipay.wallet.in
 com.micredit.in
 com.mi.globalbrowser
-com.mi.android.globalminusscreen        # App Vault / Discover screen on the left of home
+com.mi.android.globalminusscreen       
 com.mi.android.globalFileexplorer
 com.miui.backup
 com.miui.calculator
@@ -158,18 +152,16 @@ com.xiaomi.miplay_client
 com.xiaomi.mirecycle
 com.xiaomi.payment
 com.xiaomi.scanner
-com.duokan.phone.remotecontroller       # Mi Remote
+com.duokan.phone.remotecontroller      
 com.miui.newmidrive
 com.xiaomi.mircs
 com.xiaomi.discover
 org.mipay.android.manager
-
-# --- Other System Components (Generally safe to remove) ---
-com.android.egg                         # Android Version Easter Egg
+com.android.egg                         
 com.android.wallpaperbackup
-com.android.musicfx                     # Legacy audio effects library
+com.android.musicfx                     
 com.tencent.soter.soterserver
-com.android.providers.downloads.ui      # The UI for the Downloads app
+com.android.providers.downloads.ui     
 )
 
 
